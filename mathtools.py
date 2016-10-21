@@ -17,7 +17,6 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
-
 		
 def arithmetic(a, difference, n):
     '''Calculates the sum of a arithmetic serie of n elements.
@@ -27,3 +26,12 @@ def arithmetic(a, difference, n):
     sequence = [a+difference*x for x in range(n)]
     #Calculates its sum
     return sum(sequence)
+
+def fib(n):
+    ''' Calculates the n value of the fibonacci sequence'''
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
