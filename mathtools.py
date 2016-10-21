@@ -42,3 +42,4 @@ def geometric(a, ratio, n):
        n is the number of elements in the sequence.'''
     #Use the sum formula:
     return a*(1-ratio**n)/(1-ratio)
+
